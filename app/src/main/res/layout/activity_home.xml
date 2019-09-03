@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/yeToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMoradoYesynergy"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize"
+                app:titleTextColor="@color/colorFondo">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp" >
+
+                <TextView android:id="@+id/txtAbTitulo"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorFondo"
+                          android:text="Bienvenido"
+                          android:textAlignment="center"
+                          style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+                android:id="@+id/ll_main_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/colorFondo"
+                android:padding="2dp"
+                android:orientation="vertical">
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="center"
+                       android:adjustViewBounds="true"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/actividades"
+                       android:layout_marginRight="0dp"
+                       android:id="@+id/btn_actividades"/>
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="center"
+                       android:adjustViewBounds="true"
+                       android:src="@drawable/checkingup"
+                       android:id="@+id/btn_checkingup"
+                       android:layout_below="@id/btn_actividades"/>
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="center"
+                       android:adjustViewBounds="true"
+                       android:id="@+id/btn_grammarbox"
+                       android:layout_below="@id/btn_checkingup"
+                       android:src="@drawable/grammarbox"/>
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="center"
+                       android:adjustViewBounds="true"
+                       android:layout_below="@id/btn_grammarbox"
+                       android:src="@drawable/homework"/>
+
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="bottom"
+                        android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"
+                       android:src="@drawable/logo_base"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
